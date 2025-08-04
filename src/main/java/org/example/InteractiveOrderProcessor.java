@@ -118,6 +118,7 @@ public class InteractiveOrderProcessor {
                 default -> 25.00;
             };
         }
+        System.out.println();
         System.out.printf("\nShipping Cost: $%.2f\n", shippingCost);
 
         double finalOrderTotal = subtotal + shippingCost;
@@ -136,9 +137,9 @@ public class InteractiveOrderProcessor {
         String b = sc.nextLine();
         System.out.println();
 
-        System.out.println("== :" + (a == b));
-        System.out.println(".equals() :" + a.equals(b));
-        System.out.println(".equalsIgnoreCase() :" + a.equalsIgnoreCase(b));
+        System.out.println("String a == String b:" + (a == b));
+        System.out.println("String a.equals(String b) :" + a.equals(b));
+        System.out.println("String a.equalsIgnoreCase(String b) :" + a.equalsIgnoreCase(b));
         System.out.println();
 
         System.out.println("== compares the address references, not the actual string value," +
